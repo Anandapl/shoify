@@ -475,15 +475,25 @@ overflow: visible;   /* so arrows don't get clipped */}
 
 
 .contact-us{background-color: #4c7cf3;padding: 40px;}
-.contact-head{font-size: 48px;}
-.contact-desc{font-size: 24px;padding-top: 20px;color: white;}
-.contact-content{display: flex;column-gap: 30px;align-items: center;justify-content: space-between;}
-.contact__right{display: flex;gap: 20px;align-items: center;}
-.contact-input{height: 60px;border-radius: 100px;padding-left: 35px;font-size: 19px;font-weight: 600;background-color: transparent;border: 2px solid black;}
+.contact-head{font-size: 36px;}
+.contact-desc{font-size: 18px;padding-top: 20px;color: white;}
+.contact-content{display: flex;gap: 30px;align-items: center;justify-content: center;flex-wrap: wrap;}
+.contact__left{text-align: center;}
+.contact__right{display: flex;gap: 20px;align-items: center;flex-wrap: wrap;}
+.contact-input{height: 60px;border-radius: 100px;padding-left: 35px;font-size: 19px;font-weight: 600;background-color: transparent;border: 2px solid black;width: 100%;}
 input::placeholder{color: #000;}
 .contatct-link{padding-top: 20px;padding-bottom: 20px;border-width: 2px;border-radius: 100px;padding-left: 35px;padding-right: 35px;cursor: pointer;background-color: #111;color: #fff;
-text-align: center;}
+text-align: center;width: 100%;}
 
+
+@media(min-width:768px){
+.contact-head{font-size: 48px;}
+.contact__left{text-align: left;}
+.contact-desc{font-size: 24px}
+.contact__right{flex-wrap: nowrap;}
+  .contact-content{justify-content: space-between;flex-wrap: nowrap;}
+  .contact-input{width: unset;}
+}
 
 
 
