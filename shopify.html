@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shopify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <div class="topbar">
+  <div class="container topbar__content">
+
+    <!-- LOGO -->
+    <div class="topbar__logo">
+      <h2>TheGem <span>eCommerce</span></h2>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="topbar__search">
+      <input type="text" placeholder="Search...">
+      <select>
+        <option>All Categories</option>
+        <option>Mobiles</option>
+        <option>Gaming</option>
+      </select>
+      <button>🔍</button>
+    </div>
+
+    <!-- CATALOG BUTTON -->
+    <button class="catalog-btn">☰ Catalog</button>
+
+    <!-- CONTACT -->
+    <div class="topbar__contact">
+      <span>📞</span>
+      <div>
+        <p>Questions? Call Us Now:</p>
+        <h4>+123 4567 890</h4>
+      </div>
+    </div>
+
+    <!-- ICONS -->
+    <div class="topbar__icons">
+      <span>👤</span>
+      <span>♡</span>
+      <span>🛒</span>
+    </div>
+
+  </div>
+</div>
+    <header>
+        <div class="container">
+        <div class="nav">
+        <ul class="nav_bar">
+            <li class="nav_list">Home</li>
+            <li class="nav_list">Product Pages</li>
+            <li class="nav_list">Categories</li>
+            <li class="nav_list">Blog</li>
+            <li class="nav_list">Shop</li>
+            <li class="nav_list">Elements</li>
+
+            
+        </ul>
+        <ul class="nav_bar-right">
+            <li class="nav_list">Free Shipping On Orders From $99</li>
+            <li class="nav_list">ENG</li>
+
+        </ul>
+        </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__content">
+            <div class="banner__left">
+                <h2 class="banner__left-heading">Ecobee3<br>Thermo</h2>
+                <h5 class="banner__left-subhead">Smart Home Solutions</h5>
+                <h6 class="banner__left-text">Experience a new level of comfort and energy<br>savings with ecobee3 Lite smart thermostat.
+</h6>
+                <p class="banner__left-desc">Integrates seamlessly with your preferred smart home system.</p>
+                <div class="banner__left-btn">
+                    <button class="primary_btn  btn1">Shop Now</button>
+                    <button class="primary_btn btn2">More Info</button>
+                </div>
+            </div>
+            <div class="banner__right">
+                <img src="images/pic.png" class="banner__right-img">
+            </div>
+        </div>
+    </section>
+    <div class="container">
+    <div class="category-grid">
+
+<a href="#" class="card mobile">
+<h2>Mobiles & Accessories</h2>
+<img src="images/phone.png" class="card__image phone">
+</a>
+
+<a href="#" class="card computer">
+<h2>Computers & Multimedia</h2>
+<img src="images/pc.png" class="card__image pc">
+</a>
+
+<a href="#" class="card tablet">
+<h2>Tablets & eBooks</h2>
+<img src="images/tab.png" class="card__image tab">
+</a>
+
+<a href="#" class="card gaming">
+<h2>Gaming & Consoles</h2>
+<img src="images/controller.png" class="card__image controller">
+</a>
+</div>
+
+</div>
+  <section class="order">
+        <div class="container">
+            <div class="order__content">
+            <div class="order__details">
+                <img src="images/product-page-19.svg" class="order_img">
+                <div class="order__details-content">
+                    <h4>Free Shipping & Return</h4>
+                    <p>Free shipping orders over $99</p>
+                </div>
+            </div>
+             <div class="order__details">
+                <img src="images/product-page-19.svg" class="order_img">
+                <div class="order__details-content">
+                    <h4>Free Shipping & Return</h4>
+                    <p>Free shipping orders over $99</p>
+                </div>
+            </div>
+             <div class="order__details">
+                <img src="images/product-page-19.svg" class="order_img">
+                <div class="order__details-content">
+                    <h4>Free Shipping & Return</h4>
+                    <p>Free shipping orders over $99</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+<section class="download">
+    <div class="container">
+        <div class="download_btn">
+            <ul class="download_lists">
+                <a href="#"><li class="download_list">Sales |</li></a>
+                <a href="#"><li class="download_list">Sales |</li></a>
+                <a href="#"><li class="download_list">Sales </li></a>
+            </ul>
+            <img src="images/product-page-16.png" class="download__image">
+            <button class="download_button btn2">Get Now</button>
+        </div>
+    </div>
+</section>
+<section class="product">
+    <div class="container">
+    <div class="tabs">
+<!-- <button onclick="showTab('sale')">On Sale</button> -->
+ <button onclick="showTab('sale', this)" class="btn">On Sale</button>
+<button onclick="showTab('new', this)" class="btn">New Arrivals</button>
+<button onclick="showTab('featured', this)" class="btn">Featured</button>
+</div>
+
+<div id="sale" class="products">
+    <div class="products_content">
+        <div class="products_card">
+                        <div class="img-box">
+
+            <img src="images/ct1.png">
+            <img src="images/ct2.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">Games & Accessories, Gaming & Consoles</a>
+                <p class="card_desc">Gamepad Xbox Series 2</p>
+                <p class="card_price"><span class="grey-text"><s>$399.99</s></span> $319.99</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/alexa1.png">
+            <img src="images/alexa2.png">
+            </div>
+             <div class="card_categories">
+                <a href="#">Smart Home Solutions, Vaccum Cleaner</a>
+                <p class="card_desc">Robot Vacuum Cleaner Roborock</p>
+                <p class="card_price"><span class="grey-text"><s>$555.00</s></span> $425.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/time1.png">
+            <img src="images/time2.png">
+            </div>
+             <div class="card_categories">
+                <a href="#">Smart Home Solutions, Smart Products</a>
+                <p class="card_desc">Google Nest Thermostat</p>
+                <p class="card_price"><span class="grey-text"><s>$149.99</s></span> $119.99</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/vc1.png">
+            <img src="images/vc2.png">
+            </div>
+             <div class="card_categories">
+                <a href="#">Smart Home Solutions, Smart Productss</a>
+                <p class="card_desc">Smart Speaker Echo Dot 4</p>
+                <p class="card_price"><span class="grey-text"><s>$139.99</s></span> $125.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="new" class="products" style="display:none;">
+<div class="products_content">
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/tv1.png">
+            <img src="images/tv2.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitoring</a>
+                <p class="card_desc">Smart TV Xiaomi Mi</p>
+                <p class="card_price">$1,235.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/tv3.png">
+            <img src="images/tv4.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitoring</a>
+                <p class="card_desc">Smart TV Slim LED FHD</p>
+                <p class="card_price">$1,249.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/tv5.png">
+            <img src="images/tv6.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitor</a>
+                <p class="card_desc">Smart TV Hisense 32A5730FA</p>
+                <p class="card_price">$825.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/tv7.png">
+            <img src="images/tv8.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitor</a>
+                <p class="card_desc">Smart TV LG 43LJ594V</p>
+                <p class="card_price">$729.99</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="featured" class="products" style="display:none;">
+<div class="products_content">
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/tv1.png">
+            <img src="images/tv2.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitoring</a>
+                <p class="card_desc">Smart TV Xiaomi Mi</p>
+                <p class="card_price">$1,235.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+            <img src="images/tv3.png">
+            <img src="images/tv4.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitoring</a>
+                <p class="card_desc">Smart TV Slim LED FHD</p>
+                <p class="card_price">$1,249.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+
+            <img src="images/tv5.png">
+            <img src="images/tv6.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitor</a>
+                <p class="card_desc">Smart TV Hisense 32A5730FA</p>
+                <p class="card_price">$825.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <div class="img-box">
+
+            <img src="images/tv7.png">
+            <img src="images/tv8.png">
+            </div>
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitor</a>
+                <p class="card_desc">Smart TV LG 43LJ594V</p>
+                <p class="card_price">$729.99</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section class="newtech">
+    <div class="container">
+        <div class="newtech__full">
+            <div class="newtech__left">
+                <div class="newtech__left-content">
+                    <h2 class="newtech__text-head">Xbox Aqua <br> Shift SE</h2>
+                <h5 class="newtech__text-subhead">Core Wireless Controller</h5>
+                <p class="newtech__text-desc">From Golden Gamer's Collection</p>
+                <h2 class="newtech__text-head">Only $161.<span>99</span></h2>
+                <div class="newtech__btn">
+                <button class="primary_btn btn2 nt-btn">More Info</button>
+                <button class="primary_btn btn2 nt-btn">More Info</button>
+                </div>
+            </div>
+            <img src="images/home-31.png" class="newtech__left-image">
+        </div>
+        
+            <div class="newtech__left">
+                 <div class="newtech__left-content">
+                    <h2 class="newtech__text-head">DJI FPV Drone</h2>
+                <h5 class="newtech__text-subhead">Immersive Flight Experience</h5>
+                <p class="newtech__text-desc">Optional: DJI FPV Goggles V2, remote <br>controller 2 and DJI motion controller</p>
+                <h2 class="newtech__text-head amount">from $999.<span>99</span></h2>
+                <div class="newtech__btn">
+                <button class="primary_btn btn1 nt-btn">Buy Now</button>
+                <button class="primary_btn btn1 nt-btn">More Info</button>
+                </div>
+            <img src="images/home-30.png" class="newtech__left-image">
+            </div>
+            </div>
+
+    </div>
+    </div>
+</section>
+
+   <section class="deals">
+  <div class="container">
+    
+    <h2 class="deals_title">Weekly Hot Deals</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="deals_card">
+            <div class="deals-img">
+            <img src="images/watch1.png" alt="">
+            <img src="images/watch2.png" alt="">
+            </div>
+
+            <p class="card_category">MOBILES, MOBILES & ACCESSORIES</p>
+            <h3 class="card_title">Apple iPhone 11</h3>
+            <p class="card_price">$350.00</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="deals_card">
+            <div class="deals-img">
+            <img src="images/garminiwatch1.png" alt="">
+            <img src="images/garminiwatch2.png" alt="">
+</div>
+            <p class="card_category">MOBILES, MOBILES & ACCESSORIES</p>
+            <h3 class="card_title">Apple iPhone SE</h3>
+            <p class="card_price">$799.99</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="deals_card">
+          <div class="deals-img">
+            <img src="images/xr1.png" alt="">
+            <img src="images/xr2.png" alt="">
+            </div>
+            <p class="card_category">SMART WATCHES</p>
+            <h3 class="card_title">Apple Watch Nike</h3>
+            <p class="card_price">$249.99</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="deals_card">
+           <div class="deals-img">
+            <img src="images/watch1.png" alt="">
+            <img src="images/watch2.png" alt="">
+            </div>
+            <p class="card_category">SMART WATCHES</p>
+            <h3 class="card_title">Apple Watch Nike</h3>
+            <p class="card_price">$249.99</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="features">
+    <div class="container">
+        <div class="feature__content">
+            <div class="feature__left">
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section class="qualities">
+    <div class="container">
+        <div class="qualitites__cards">
+             <div class="qualities__card">
+                <img src="images/home-10.svg">
+                <div class="qualities__card-content">
+                    <h5 class="qual__head">New in Markets</h5>
+                    <p class="qual__desc">Best products all over the world.</p>
+                </div>
+            </div>
+             <div class="qualities__card">
+                <img src="images/product-page-22.svg">
+                <div class="qualities__card-content">
+                    <h5 class="qual__head">Return Policy</h5>
+                    <p class="qual__desc">Easy consumer program.</p>
+                </div>
+            </div>
+             <div class="qualities__card">
+                <img src="images/home-11.svg">
+                <div class="qualities__card-content">
+                    <h5 class="qual__head">Secure Payments</h5>
+                    <p class="qual__desc">Safe & fast system transactions.</p>
+                </div>
+            </div>
+             <div class="qualities__card">
+                <img src="images/home-12.svg">
+                <div class="qualities__card-content">
+                    <h5 class="qual__head">Best Quality</h5>
+                    <p class="qual__desc">20+ years on the market.</p>
+                </div>
+            </div>
+            
+                           
+            
+        </div>
+    </div>
+</section>
+<section class="suggestion">
+    <div class="container">
+        <div class="suggestion-flex">
+        <div class="suggestion__cards">
+            <h3 class="suggestion__cards-head">Best Rated</h2>
+                <div class="suggestion__card">
+                    <img src="images/sga2w.png" alt="watch-s" class="suggestion__card-img">
+                    <div class="suggestion__card-content">
+                        <p>Samsung Galaxy Active 2 <br>Smartwatch 44mm <br>$159.99</p>
+                    </div>
+                </div>
+                 <div class="suggestion__card">
+                    <img src="images/smbl.png" alt="watch-s" class="suggestion__card-img">
+                    <div class="suggestion__card-content">
+                        <p>Samsung Galaxy A42 5G</p>
+                        <p>$399.99</p>
+                    </div>
+                </div>
+        </div>
+        <div class="suggestion__cards">
+            <h3 class="suggestion__cards-head">Top Selling</h2>
+                <div class="suggestion__card">
+                    <img src="images/sga2w.png" alt="watch-s" class="suggestion__card-img">
+                    <div class="suggestion__card-content">
+                        <p>Samsung Galaxy Active 2 <br>Smartwatch 44mm <br>$159.99</p>
+                    </div>
+                </div>
+                 <div class="suggestion__card">
+                    <img src="images/time1.png" alt="watch-s" class="suggestion__card-img">
+                    <div class="suggestion__card-content">
+                        <p>Google Nest Thermosta</p>
+                        <p>$399.99</p>
+                    </div>
+                </div>
+        </div>
+        <div class="suggestion__cards">
+            <h3 class="suggestion__cards-head">More Products</h2>
+                <div class="suggestion__card">
+                    <img src="images/earbuds.png" alt="watch-s" class="suggestion__card-img">
+                    <div class="suggestion__card-content">
+                        <p>Soundcore Life Dot 2 NC</p>
+                        <p>$79.99</p>
+                    </div>
+                </div>
+                <div class="suggestion__card">
+                    <img src="images/webcam.png" alt="watch-s" class="suggestion__card-img">
+                    <div class="suggestion__card-content">
+                        <p>Webcam Fill Light Zoom Meeting</p>
+                        <p>$169.99</p>
+                    </div>
+                </div>
+        </div>
+       <div class="suggestion__cards">
+                    <h3 class="suggestion__cards-head">Best Rated</h2>
+        <div class="swiper newSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide suggestion-slide">
+                <img src="images/tv1.png" style="max-width: none;width: 250px;" class="swiper__img">
+                <img src="images/tv2.png" style="max-width: none;width: 250px;" class="swiper__img">
+
+</div>
+<div class="swiper-slide suggestion-slide">
+                <img src="images/ct1.png" style="max-width: none;width: 250px;" class="swiper__img">
+                <img src="images/ct2.png" style="max-width: none;width: 250px;" class="swiper__img">
+                
+
+</div>
+    </div>
+    <div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
+  </div>
+        </div>
+      
+        </div>
+       
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container">
+        <h2 class="partners__heading">Brand Partners</h2>
+        <div class="flex">
+           <img src="images/talk talk.svg" class="flex-img">
+           <img src="images/nest.svg" class="flex-img">
+           <img src="images/garmini.svg" class="flex-img">
+           <img src="images/grab.svg" class="flex-img">
+           <img src="images/bose.svg" class="flex-img">
+           <img src="images/tesla.svg" class="flex-img">
+           <img src="images/miata.svg" class="flex-img">
+           <img src="images/wacom.svg" class="flex-img">
+           <img src="images/udacity.svg" class="flex-img">
+        </div>
+    </div>
+</section>
+<footer class="footer">
+  <div class="container footer__top">
+
+    <!-- LEFT -->
+    <div class="footer__left">
+      <h2 class="logo">TheGem <span>eCommerce</span></h2>
+
+      <p class="footer__tag">
+        Make stunning shops with <br>
+        <span>TheGem theme!</span>
+      </p>
+
+      <div class="footer__contact">
+        <p>Call us now</p>
+        <h3>+123 4567 890</h3>
+      </div>
+
+      <div class="footer__social">
+        <p>Follow Us in Socials:</p>
+        <div class="icons">
+          <span>🐦</span>
+          <span>📘</span>
+          <span>▶️</span>
+          <span>📌</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer__links">
+      <div>
+        <h4>Our Store</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Delivery</li>
+          <li>Support & FAQ</li>
+          <li>Professional growth</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Disclaimer</li>
+          <li>Privacy Policy</li>
+          <li>Risk Disclosure</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Useful Links</h4>
+        <ul>
+          <li>Gift Vouchers</li>
+          <li>Platform Vision</li>
+          <li>Team Members</li>
+          <li>Referral Program</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer__bottom">
+    <p>Copyright © CodexThemes. All Rights Reserved.</p>
+    <p>19th Ave New York, NY 95822, USA</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true, 
+  centeredSlides: false,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
+</script>
+
+
+<script>
+    function showTab(tabName){
+    let sections = document.querySelectorAll(".products")
+    let btn = document.querySelectorAll(".tabs button")
+
+    btn.forEach(function(b){
+        b.classList.remove("active")
+        b.classList.add("active")
+
+    })
+
+sections.forEach(function(sec){
+   sec.style.display = "none"
+    })
+document.getElementById(tabName).style.display = "block"
+}
+
+</script>
+
+  <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".newSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",    
+    clickable: true,
+  },
+});
+  </script>
+</body>
+</html>

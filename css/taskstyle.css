@@ -1,0 +1,26 @@
+*{
+    font-family: sans-serif;
+    background-color: black;
+}
+#p1{color:red}
+img{max-width: 100%;height: auto;width: 100px;}
+.flt{width: 30%;}
+.flt img{float: left;padding-right: 20px;}
+.fltright{width: 30%;}
+.fltright img{padding-left: 20px;clear: right;}
+.clr img{float:left}
+.clr{width: 30%;}
+.clrright{width: 30%;}
+.clrright img{clear:left;}
+.animation{display: flex;align-items: center;justify-content: center;padding-right: 50%;}
+.animation h2{background-color: red;width:fit-content;animation-name:MyAnimation;display: block;position: relative;animation-duration: 5s;padding-inline: 20px;animation-delay: 1s;}
+@keyframes MyAnimation{
+    0%{background-color:green;left: 0px;top: 0px;color: blue;}
+    20%{background-color:orange;left: 0px;top: 200px;color: brown;}
+    /* 50%{background-color: aqua;left: 200px;top: 200px;} */
+    40%{background-color: greenyellow;left: 200px;top: 0px;color: red;}
+    /* 100%{background-color: burlywood;left: 0px;top: 0px;} */
+    60%{background-color: blanchedalmond;left: 400px;top: 200px;color: black;}
+    80%{background-color: aqua;left: 400px;top:0px;color: crimson;}
+    100%{background-color: bisque;left: 800px;top: 0px;color: blueviolet;}
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="text">Hello JavaScript</h1>
+
+<button onclick="toggleText()">Toggle</button> -->
+
+<!-- <h2 id="likes">👍 Like 0</h2>
+
+<button onclick="likePost()">Like</button>
+<button onclick="disLikePost()">Dislike</button>
+<button onclick="reStarting()">Reset</button>
+
+
+<script>
+let count = 0
+function likePost(){
+       count ++ 
+       document.getElementById("likes").innerHTML = "👍 Like " + count
+}
+function disLikePost(){
+    if(count > 0){
+    count -- 
+    }
+    document.getElementById("likes").innerHTML = "👍 Like " + count
+    
+}
+function reStarting(){
+    count = 0
+document.getElementById("likes").innerHTML = "👍 Like " + count
+}
+</script> -->
+
+<!-- <script>
+
+// function toggleText(){
+//     let x = document.getElementById("text")
+
+//     if(x.style.display == "none"){
+//         x.style.display = "block"
+//     }
+//     else{
+//         x.style.display = "none"
+//     }
+
+// }
+
+
+
+</script> -->   
+
+<!-- 
+<input type="text" id="text" oninput="countChar()">
+
+<p id="count">Characters: 0</p>
+
+<script>
+
+function countChar(){
+    let x = document.getElementById("text").value 
+    let length = x.length 
+    document.getElementById("count").innerHTML = "Characters: " + length
+
+
+} -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Mode Toggle</title>
+</head>
+
+<body>
+
+<h1>Dark Mode / Light Mode</h1>
+
+<button id ="modeBtn" onclick="toggleMode()">Dark Mode</button>
+
+<script>
+
+function toggleMode(){
+
+   let x = document.getElementById("modeBtn")
+   x.innerHTML = "Light Mode"
+        if(document.body.style.background == "black"){
+            document.body.style.background = "white"
+            document.body.style.color = "black"
+            x.innerHTML = "Dark Mode"
+        }
+        else{
+            document.body.style.background = "black"
+            document.body.style.color = "white"
+            x.innerHTML = "Light Mode"
+
+        }
+}
+
+</script>
+
+</body>
+</html>
+
+</script>
+</body>
+</html>

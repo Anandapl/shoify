@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tabs button{
+padding:10px 20px;
+border:none;
+background:none;
+cursor:pointer;
+font-weight:bold;
+}
+.products_content{display: flex;align-items: center;justify-content: center;width: 100%;}
+.active{
+border-bottom:2px solid black;
+}
+.tabs button:hover{
+border-bottom:2px solid black;
+}
+
+.products_card{
+position: relative;
+width: 23%;
+}
+
+.products_card img{
+width: 200px;
+transition: opacity 0.5s ease;
+}
+.products_card img:nth-child(2){
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+}
+.grey-text{color:  #abb8c3;;}
+.products_card:hover img:nth-child(2){
+opacity: 1;
+}
+.products_card:hover img:nth-child(1){
+opacity: 0;
+}
+</style>
+<body>
+    <div class="tabs">
+<!-- <button onclick="showTab('sale')">On Sale</button> -->
+ <button onclick="showTab('sale', this)">On Sale</button>
+<button onclick="showTab('new', this)">New Arrivals</button>
+<button onclick="showTab('featured', this)">Featured</button>
+</div>
+
+<div id="sale" class="products">
+    <h2>SALE PRODUCTS</h2>
+    <div class="products_content">
+        <div class="products_card">
+            <img src="images/ct1.png">
+            <img src="images/ct2.png">
+            <div class="card_categories">
+                <a href="#">Games & Accessories, Gaming & Consoles</a>
+                <p class="card_desc">Gamepad Xbox Series 2</p>
+                <p class="card_price"><span class="grey-text"><s>$399.99</s></span> $319.99</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <img src="images/alexa1.png">
+            <img src="images/alexa2.png">
+             <div class="card_categories">
+                <a href="#">Smart Home Solutions, Vaccum Cleaner</a>
+                <p class="card_desc">Robot Vacuum Cleaner Roborock</p>
+                <p class="card_price"><span class="grey-text"><s>$555.00</s></span> $425.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <img src="images/time1.png">
+            <img src="images/time2.png">
+             <div class="card_categories">
+                <a href="#">Smart Home Solutions, Smart Products</a>
+                <p class="card_desc">Google Nest Thermostat</p>
+                <p class="card_price"><span class="grey-text"><s>$149.99</s></span> $119.99</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <img src="images/vc1.png">
+            <img src="images/vc2.png">
+             <div class="card_categories">
+                <a href="#">Smart Home Solutions, Smart Productss</a>
+                <p class="card_desc">Smart Speaker Echo Dot 4</p>
+                <p class="card_price"><span class="grey-text"><s>$139.99</s></span> $125.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="new" class="products" style="display:none;"><h2>NEW PRODUCTS</h2>
+<div class="products_content">
+        <div class="products_card">
+            <img src="images/tv1.png">
+            <img src="images/tv2.png">
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitoring</a>
+                <p class="card_desc">Smart TV Xiaomi Mi</p>
+                <p class="card_price">$1,235.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <img src="images/tv3.png">
+            <img src="images/tv4.png">
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitoring</a>
+                <p class="card_desc">Smart TV Slim LED FHD</p>
+                <p class="card_price">$1,249.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <img src="images/tv5.png">
+            <img src="images/tv6.png">
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitor</a>
+                <p class="card_desc">Smart TV Hisense 32A5730FA</p>
+                <p class="card_price">$825.00</p>
+            </div>
+        </div>
+        <div class="products_card">
+            <img src="images/tv7.png">
+            <img src="images/tv8.png">
+            <div class="card_categories">
+                <a href="#">TV & Video Home, TV-Sets & Monitor</a>
+                <p class="card_desc">Smart TV LG 43LJ594V</p>
+                <p class="card_price">$729.99</p>
+            </div>
+        </div>
+    </div></div>
+<div id="featured" class="products" style="display:none;">FEATURED PRODUCTS</div>
+</body>
+<script>
+    function showTab(tabName){
+    let sections = document.querySelectorAll(".products")
+    let btn = document.querySelectorAll(".tabs button")
+
+    btn.forEach(function(b){
+        b.classList.remove("active")
+        b.classList.add("active")
+
+    })
+
+
+
+sections.forEach(function(sec){
+   sec.style.display = "none"
+    })
+document.getElementById(tabName).style.display = "block"
+
+
+
+    
+}
+
+</script>
+</html>

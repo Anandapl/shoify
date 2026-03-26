@@ -1,0 +1,18 @@
+body{font-family: sans-serif;}
+img{max-width: 100%;height: auto;}
+li{list-style-type: none;}
+a{text-decoration: none;color:#111;}
+header{padding-top: 5px;padding-bottom:5px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+.header__content{display: flex;align-items: center;justify-content: space-between;}
+.logo{width: 50%;}
+.nav_bar{display: flex;align-items: center;justify-content: center; column-gap: 30px;}
+.nav_bar-btn{border-radius: 20px;padding-left: 10px;padding-right: 10px;padding-top: 5px;padding-bottom: 5px;background-color: #397fe2;color: #fff;border-color: #397fe2;cursor: pointer;}
+.container{max-width: 1280px;margin: 2rem;}
+.banner__page{display: flex;gap: 15%;align-items: center;}
+.banner_left-content{width: 37%;}
+.banner_left-heading{font-size: 40px;}
+.banner_left-descprition{color: #5c5c5c;}
+.banner_image{width: 490px;}
+.banner_submit{font-size: 24px;padding: 20px;border: 20px;border-radius: 40px;background-color: #397fe2;margin-top: 15px;transition: .3s ease-in-out;}
+.banner_link{color: #fff;}
+.banner_submit:hover{background-color:#ff7700;}

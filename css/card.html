@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{font-family: sans-serif;box-sizing: border-box;margin: 0;padding: 0;}
+        .cards{display: flex;align-items:center;justify-content: center;margin-top: 9%;gap: 30px;flex-wrap: wrap;width: 100%;}
+        .card{height: auto;padding: 30px;background-color: red;text-align: center;cursor: pointer;transition: 1s ease-in-out;width: 30%;}
+        .card:hover{color: white;background-color: blue;}
+        .grid{display: grid;grid-template-columns: repeat(3, 30%);gap: 40px;justify-content: center;margin-top: 100px;}
+        .grids{background-color: blue;color:white;text-align: center;height: auto;padding: 30px;width: 100%;transition: 2s;cursor: pointer;}
+        .grids:hover{color: black;background-color: red;}
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card"><h2>HTML</h2></div>
+        <div class="card"><h2>CSS</h2></div>
+        <div class="card"><h2>JS</h2></div>
+        <div class="card"><h2>REACT</h2></div>
+        <div class="card"><h2>PYTHON</h2></div>
+        <div class="card"><h2>AWS</h2></div>
+
+    </div>
+    <div class="grid">
+        <div class="grids"><h2>HTML</h2></div>
+        <div class="grids"><h2>HTML</h2></div>
+        <div class="grids"><h2>HTML</h2></div>
+        <div class="grids"><h2>HTML</h2></div>
+        <div class="grids"><h2>HTML</h2></div>
+        <div class="grids"><h2>HTML</h2></div>
+
+    </div>
+</body>
+</html>
