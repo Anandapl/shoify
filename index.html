@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/shopify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </head>
 <body>
-    <div class="topbar">
+    <section class="header">
   <div class="container topbar__content">
 
     <!-- LOGO -->
     <div class="topbar__logo">
-      <h2>TheGem <span>eCommerce</span></h2>
+      <img src="images/logo.svg" class="logo">
     </div>
 
     <!-- SEARCH -->
@@ -35,7 +36,7 @@
 
     <!-- CONTACT -->
     <div class="topbar__contact">
-      <span>📞</span>
+      <span><i class="fa-solid fa-phone"></i></span>
       <div>
         <p>Questions? Call Us Now:</p>
         <h4>+123 4567 890</h4>
@@ -44,14 +45,14 @@
 
     <!-- ICONS -->
     <div class="topbar__icons">
-      <span>👤</span>
-      <span>♡</span>
-      <span>🛒</span>
+      <span><i class="fa-solid fa-address-book"></i></span>
+      <span><i class="fa-solid fa-heart"></i></span>
+      <span><i class="fa-solid fa-cart-arrow-down"></i></span>
     </div>
 
   </div>
-</div>
-    <header>
+    </section>
+    <section class="navigation">
         <div class="container">
         <div class="nav">
         <ul class="nav_bar">
@@ -71,7 +72,7 @@
         </ul>
         </div>
         </div>
-    </header>
+    </section>
     <section class="banner">
         <div class="container">
             <div class="banner__content">
@@ -563,18 +564,33 @@
         </div>
     </div>
 </section>
+
+<section class="contact-us">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact__left">
+            <h2 class="contact-head">Contact Us</h2>
+            <h6 class="contact-desc">Tell us about you</h6>
+            </div>
+            <div class="contact__right">
+                <input id="email" type="email" placeholder="enter your email" class="contact-input">
+                <a href="#" class="contatct-link">Submit</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
 <footer class="footer">
   <div class="container footer__top">
 
     <!-- LEFT -->
     <div class="footer__left">
-      <h2 class="logo">TheGem <span>eCommerce</span></h2>
-
+      <img src="images/logo.svg" class="logo">
       <p class="footer__tag">
         Make stunning shops with <br>
         <span>TheGem theme!</span>
       </p>
-
+      <div class="footer__content">
       <div class="footer__contact">
         <p>Call us now</p>
         <h3>+123 4567 890</h3>
@@ -583,11 +599,12 @@
       <div class="footer__social">
         <p>Follow Us in Socials:</p>
         <div class="icons">
-          <span>🐦</span>
-          <span>📘</span>
-          <span>▶️</span>
-          <span>📌</span>
+        <i class="fa-brands fa-x-twitter"></i>         
+         <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
         </div>
+      </div>
       </div>
     </div>
 
