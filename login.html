@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Popup Login</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+  }
+
+  /* Open Button */
+  .open-btn {
+    padding: 12px 20px;
+    border: none;
+    background: #667eea;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  /* Popup */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .popup.active {
+    display: flex;
+  }
+
+  /* Form */
+  .form {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .form-container {
+    background: #fff;
+    padding: 25px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+</style>
+</head>
+
+<body>
+
+<button class="open-btn">Open Login</button>
+
+<div class="popup" id="popup">
+
+  <section class="form">
+
+    <div class="form-container">
+
+      <span class="close-btn">&times;</span>
+
+      <h2>Login</h2>
+
+      <form onsubmit="validateLogin(event)">
+
+        <div class="input-group">
+          <label>Email</label>
+          <input id="email" type="email">
+          <span id="emailError" class="error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input id="password" type="password">
+          <span id="passwordError" class="error"></span>
+        </div>
+
+        <button class="btn" type="submit">Login</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <script>
+    const openBtn = document.querySelector(".open-btn")
+    const closeBtn = document.querySelector(".close-btn")
+    const popup = document.getElementById("popup")
+
+    openBtn.addEventListener("click" , function () {
+        popup.classList.add("active")
+    }
+    )
+    closeBtn.addEventListener("click",function(){
+        popup.classList.remove("active")
+    })
+
+    
+
+  </script>
+
+</div>
+
+</body>
+</html>

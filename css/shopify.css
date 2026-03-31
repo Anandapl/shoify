@@ -474,7 +474,7 @@ overflow: visible;   /* so arrows don't get clipped */}
 /* contact us */
 
 
-.contact-us{background-color: #4c7cf3;padding: 40px;}
+.contact-us{padding: 40px;background: linear-gradient(135deg, #667eea, #764ba2);}
 .contact-head{font-size: 36px;}
 .contact-desc{font-size: 18px;padding-top: 20px;color: white;}
 .contact-content{display: flex;gap: 30px;align-items: center;justify-content: center;flex-wrap: wrap;}
@@ -833,3 +833,78 @@ text-align: center;width: 100%;}
     margin: auto;
   }
 }
+
+
+
+/* form */
+
+
+ .form{
+            /* background: linear-gradient(135deg, #667eea, #764ba2); */
+            /* height: 100vh; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            width: 380px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+            flex: 1;
+        }
+
+        .input-group label {
+            font-size: 13px;
+            margin-bottom: 3px;
+            display: block;
+            color: #555;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            width: 100%;
+            padding: 8px;
+            /* reduced */
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+            height: 60px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            color: white;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .error{
+            color:red;font-size:12px
+        }
